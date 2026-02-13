@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOS ANUGRAH | CENTRAL NEXUS v6.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root { --neon: #00f2ff; --dark: #010206; --card-bg: rgba(255,255,255,0.03); }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { 
+            background: var(--dark); color: white; 
+            font-family: 'Share Tech Mono', monospace; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center; padding: 20px;
+        }
+
+        header { text-align: center; margin-bottom: 30px; }
+        .profile-img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--neon); box-shadow: 0 0 15px var(--neon); margin-bottom: 10px; object-fit: cover; }
+        h1 { font-family: 'Orbitron', sans-serif; font-size: 1.2rem; letter-spacing: 3px; text-shadow: 0 0 10px var(--neon); }
+        .status { color: var(--neon); font-size: 0.6rem; margin-top: 5px; opacity: 0.8; }
+
+        /* Grid System Baru - 2 Kolom Biar Muat Banyak */
+        .nexus-grid { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 12px; 
+            width: 100%; 
+            max-width: 800px; 
+        }
+
+        .nexus-card {
+            background: var(--card-bg); border: 1px solid rgba(0, 242, 255, 0.1);
+            padding: 15px; border-radius: 10px; text-decoration: none; color: white;
+            transition: 0.3s; position: relative; overflow: hidden; backdrop-filter: blur(5px);
+        }
+
+        .nexus-card:hover { border-color: var(--neon); box-shadow: 0 0 15px rgba(0, 242, 255, 0.2); transform: scale(1.02); }
+        .nexus-card h3 { font-family: 'Orbitron', sans-serif; font-size: 0.7rem; color: var(--neon); margin-bottom: 5px; }
+        .nexus-card p { font-size: 0.6rem; color: #888; line-height: 1.2; }
+        .tag { position: absolute; top: 5px; right: 5px; font-size: 0.5rem; background: rgba(0, 242, 255, 0.1); padding: 1px 4px; border-radius: 3px; color: var(--neon); }
+
+        footer { margin-top: 30px; font-size: 0.5rem; color: #444; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://i.postimg.cc/jwMkxJyL/IMG-20260202-135638-067.webp" class="profile-img">
+        <h1>BOS ANUGRAH</h1>
+        <div class="status">● SYSTEM_ONLINE | 10_PROJECTS_LOADED</div>
+    </header>
+
+    <div class="nexus-grid">
+        <a href="https://anugerahlouisapriliano-dev.github.io/anugrah/" class="nexus-card">
+            <h3>NEURAL_CORE</h3><p>Database rahasia Bos.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Tugas-anugrah/" class="nexus-card">
+            <h3>SHADOW_TASK</h3><p>Manajer objektif.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Dashboard-anugrah/" class="nexus-card">
+            <h3>TACTICAL_HUD</h3><p>Live monitoring.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Skill-anugrah/" class="nexus-card">
+            <h3>TECH_RADAR</h3><p>Skill inventory.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Prank-banned-wa-anugrah/" class="nexus-card">
+            <h3>WA_BANNED</h3><p>Prank simulator.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Valentine-anugrah/" class="nexus-card">
+            <h3>VALENTINE</h3><p>Protokol romantis.</p>
+        </a>
+
+        <a href="https://anugerahlouisapriliano-dev.github.io/AI-Ghost-Scanner/" class="nexus-card">
+            <span class="tag">NEW</span><h3>GHOST_SCAN</h3><p>Sensor entitas.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Voice-Command/" class="nexus-card">
+            <span class="tag">NEW</span><h3>VOICE_VIS</h3><p>Audio visualizer.</p>
+        </a>
+        <a href="https://anugerahlouisapriliano-dev.github.io/Cyber-Draw/" class="nexus-card">
+            <span class="tag">NEW</span><h3>NEON_DRAW</h3><p>Sketch pad neon.</p>
+        </a>
+        <a href="https://wa.me/6281356653098" class="nexus-card">
+            <span class="tag">CONTACT</span><h3>DIRECT_WA</h3><p>Hubungi Admin.</p>
+        </a>
+    </div>
+
+    <footer>CENTRAL NEXUS v6.0 © 2026</footer>
+
+</body>
+</html>
